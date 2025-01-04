@@ -2,6 +2,7 @@ package org.example.timelineapiserver.repository
 
 import com.querydsl.jpa.impl.JPAQueryFactory
 import org.example.timelineapiserver.dto.request.TimelineGetRequest
+import org.example.timelineapiserver.entity.QTimeline
 import org.example.timelineapiserver.entity.Timeline
 
 class TimelineQueryDslRepositoryImpl(
