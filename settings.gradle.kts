@@ -1,1 +1,1 @@
-rootProject.name = "timelineApiServer"
+rootProject.name = "X-TimelineApiServer"
