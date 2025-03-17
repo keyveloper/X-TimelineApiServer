@@ -13,13 +13,12 @@ version = "0.0.1-SNAPSHOT"
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(17)
+        languageVersion.set(JavaLanguageVersion.of(17))
     }
 }
 
 // query DSL setting - Q class
-kapt{
-    includeCompileClasspath = false
+kapt {
     arguments {
         arg("querydsl.entityAccessors", "true")
         arg("querydsl.useKotlinClass", "true")
@@ -45,11 +44,10 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-validation:3.3.4")
 
     // query DSL
-    implementation ("com.querydsl:querydsl-jpa:5.0.0:jakarta")
-    kapt ("com.querydsl:querydsl-apt:5.0.0:jakarta")
-    kapt ("jakarta.annotation:jakarta.annotation-api")
-    kapt ("jakarta.persistence:jakarta.persistence-api")
-
+    implementation("com.querydsl:querydsl-jpa:5.0.0:jakarta")
+    kapt("com.querydsl:querydsl-apt:5.0.0:jakarta")
+    kapt("jakarta.annotation:jakarta.annotation-api")
+    kapt("jakarta.persistence:jakarta.persistence-api")
 }
 
 kotlin {
