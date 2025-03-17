@@ -1,7 +1,7 @@
 spring:
   config:
     import: application-db.yml
-  profies:
+  profiles:
     group:
       local: db-local-window
       beta: db-beta-linux
