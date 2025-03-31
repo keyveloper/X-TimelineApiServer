@@ -5,7 +5,6 @@ spring:
     group:
       local: db-local-window
       beta: db-beta-linux
-
   application:
     name: timelineApiServer
 
